@@ -6,6 +6,10 @@ spring:
     driverClassName: org.h2.Driver
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
-    hibernate.ddl-auto: update
+    hibernate:
+      ddl-auto: update
+      hbm2ddl.auto: update
   h2.console.enabled: true
 server.port: 8081
+
+app.initial.data.create.enable: true
